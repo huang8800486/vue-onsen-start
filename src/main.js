@@ -6,6 +6,7 @@ import Vue from 'vue';
 import VueOnsen from 'vue-onsenui'; // This already imports 'onsenui'
 import store from './store';
 import router from './router';
+import permission from './permission';
 import App from './App';
 
 Vue.use(VueOnsen);
