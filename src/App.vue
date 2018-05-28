@@ -11,7 +11,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  computed: mapGetters(['pageStack']),
+  computed: mapGetters('navigator', ['pageStack']),
   methods: {
     goBack() {
       // Go to the parent route component
