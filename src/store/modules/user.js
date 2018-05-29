@@ -2,7 +2,7 @@ const state = {
     skisEmployee: {
         comp: '',
         emno: '',
-        role: 0
+        role: 1
     }
 }
 
