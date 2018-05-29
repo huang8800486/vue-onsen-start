@@ -1,6 +1,13 @@
-import Login from '../pages/login';
-import Dashboard from '../pages/dashboard';
-import SubscribeNotify from '../pages/subscribeNotify';
+import Login from '../pages/Login';
+import Linehook from '../components/Linehook';
+import Dashboard from '../pages/Dashboard';
+import SubscribeNotify from '../pages/SubscribeNotify';
+
+//const extend = (name, component) => ({name, extends: component});
+const extend = (name, component) => {
+    debugger
+    return {name, extends: component};
+};
 
 const routes = [{
         path: '',
@@ -16,13 +23,8 @@ const routes = [{
             }
         }]
     },
-    {
-        path: '/login',
-        name: 'login',
-        component: {
-            extends: Login
-        },
-    }
+    { path: '/login', name: 'login', component: { extends: Login }},
+    { path: '/linehook', name: 'linehook', component: extend('linehook', Linehook) }
 ];
 
 export default routes;

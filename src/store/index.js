@@ -10,7 +10,7 @@ const store = new Vuex.Store({
     user: user,
     navigator: navigator
   },
-  strict: true,
+  //strict: true,
 });
 
 export default store;
